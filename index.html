@@ -45,18 +45,37 @@ video{width:100%;height:100%;object-fit:cover}
  letter-spacing:2px;text-shadow:0 0 14px #00eaff
 }
 
-/* PROFILE IMAGE */
+/* PROFILE IMAGE WITH ZOOM EFFECT */
 .avatar{
  width:170px;height:170px;border-radius:50%;
- border:4px solid #00eaff;box-shadow:0 0 30px #00eaff;
- object-fit:cover;margin-bottom:18px
+ border:4px solid #00eaff;
+ box-shadow:0 0 30px #00eaff;
+ object-fit:cover;
+ margin-bottom:18px;
+ animation:zoomPulse 2.4s infinite ease-in-out;
+}
+
+@keyframes zoomPulse{
+ 0%{
+  transform:scale(1);
+  box-shadow:0 0 25px #00eaff;
+ }
+ 50%{
+  transform:scale(1.12);
+  box-shadow:0 0 45px #00eaff,0 0 70px #00eaff;
+ }
+ 100%{
+  transform:scale(1);
+  box-shadow:0 0 25px #00eaff;
+ }
 }
 
 /* TIMER */
 .timer-circle{
  width:120px;height:120px;margin:16px auto 10px;border-radius:50%;
  display:flex;align-items:center;justify-content:center;
- border:3px solid yellow;box-shadow:0 0 18px yellow,0 0 30px yellow
+ border:3px solid yellow;
+ box-shadow:0 0 18px yellow,0 0 30px yellow
 }
 .timer{font-size:30px;font-weight:900;color:yellow}
 
@@ -110,7 +129,6 @@ video{width:100%;height:100%;object-fit:cover}
 
 <body>
 
-<!-- BACKGROUND VIDEO -->
 <div class="video-bg">
  <video id="bgVideo" autoplay muted playsinline></video>
 </div>
@@ -129,7 +147,6 @@ video{width:100%;height:100%;object-fit:cover}
   <div id="timer" class="timer">01:00</div>
  </div>
 
- <!-- RED WARNING TEXT -->
  <div class="warning">⚠️ FREE JOINING ENDING SOON</div>
 
  <p><b>🔥 Daily Cricket & Trading Tips</b><br><b>🏆 Trusted High Accuracy</b></p>
