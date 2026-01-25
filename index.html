@@ -5,197 +5,153 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MALIK HARYANA</title>
 
-<!-- Meta Pixel -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald:wght@700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Open Sans',sans-serif;}
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#020024,#090979,#00d4ff);
+}
+.hero{
+  width:360px;
+  border-radius:20px;
+  padding:25px 15px 18px;
+  text-align:center;
+  box-shadow:0 0 40px rgba(0,212,255,.4);
+  background:
+    linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
+    url("https://github.com/mrxsetup/AKCRICKETTRADERTM/blob/main/AKNEWLOGOCOLOR.jpg?raw=true");
+  background-size:cover;
+  background-position:center;
+}
+.profile-picture img{
+  height:120px;width:120px;border-radius:50%;
+  border:4px solid #00d4ff;
+  box-shadow:0 0 25px #00d4ff;
+  object-fit:cover;
+}
+.heading1{
+  margin-top:15px;
+  font-family:'Oswald',sans-serif;
+  color:#fff;
+  letter-spacing:1px;
+}
+.subscriber-counter{
+  margin:15px 0;color:#fff;font-size:22px;font-weight:bold;
+}
+.button{margin:16px 0;}
+.btn{
+  display:block;padding:15px;border-radius:14px;
+  color:#fff;font-weight:bold;text-decoration:none;
+  background:linear-gradient(270deg,#00c6ff,#0072ff,#00ffcc);
+  background-size:600% 600%;
+  animation:gradientMove 4s ease infinite;
+  box-shadow:0 0 20px rgba(0,198,255,.8);
+}
+@keyframes gradientMove{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+.points ul{list-style:none;margin:18px 0;color:#fff;}
+.points li{margin:8px 0;}
+.trust{color:#00ffcc;font-size:14px;}
+.urgent{color:#ffcc00;font-size:15px;margin-top:6px;}
+
+.ads-credit{margin-top:14px;}
+.ads-credit a{
+  display:inline-block;
+  padding:6px 12px;
+  font-size:12px;
+  color:#00ffcc;
+  text-decoration:none;
+  border:1px solid rgba(0,255,204,.6);
+  border-radius:6px;
+  background:rgba(0,0,0,.55);
+}
+.ads-credit a:hover{
+  background:rgba(0,0,0,.8);
+  box-shadow:0 0 10px rgba(0,255,204,.6);
+}
+</style>
+
+<!-- META PIXEL -->
 <script>
 !function(f,b,e,v,n,t,s){
- if(f.fbq)return;n=f.fbq=function(){
- n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
- if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
- n.queue=[];t=b.createElement(e);t.async=!0;
- t.src=v;s=b.getElementsByTagName(e)[0];
- s.parentNode.insertBefore(t,s)
+if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)
 }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init','1214227190207754');
+
+fbq('init','1404664440783145');
 fbq('track','PageView');
 </script>
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
-body{
- min-height:100vh;display:flex;justify-content:center;align-items:center;
- color:#fff;overflow:hidden
-}
-.video-bg{position:fixed;inset:0;z-index:-2}
-video{width:100%;height:100%;object-fit:cover}
-.overlay{position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:-1}
-
-.card{
- width:520px;max-width:95%;background:rgba(0,0,0,.55);
- padding:40px;border-radius:28px;text-align:center;
- box-shadow:0 30px 90px rgba(0,0,0,.9)
-}
-
-/* NAME */
-.name-box{
- border:2px solid #00eaff;padding:14px;border-radius:10px;
- box-shadow:0 0 18px #00eaff,0 0 35px #00eaff;margin-bottom:22px
-}
-.name{
- font-size:32px;font-weight:900;color:#00eaff;
- letter-spacing:2px;text-shadow:0 0 14px #00eaff
-}
-
-/* PROFILE IMAGE WITH ZOOM EFFECT */
-.avatar{
- width:170px;height:170px;border-radius:50%;
- border:4px solid #00eaff;
- box-shadow:0 0 30px #00eaff;
- object-fit:cover;
- margin-bottom:18px;
- animation:zoomPulse 2.4s infinite ease-in-out;
-}
-
-@keyframes zoomPulse{
- 0%{
-  transform:scale(1);
-  box-shadow:0 0 25px #00eaff;
- }
- 50%{
-  transform:scale(1.12);
-  box-shadow:0 0 45px #00eaff,0 0 70px #00eaff;
- }
- 100%{
-  transform:scale(1);
-  box-shadow:0 0 25px #00eaff;
- }
-}
-
-/* TIMER */
-.timer-circle{
- width:120px;height:120px;margin:16px auto 10px;border-radius:50%;
- display:flex;align-items:center;justify-content:center;
- border:3px solid yellow;
- box-shadow:0 0 18px yellow,0 0 30px yellow
-}
-.timer{font-size:30px;font-weight:900;color:yellow}
-
-/* RED WARNING */
-.warning{
- margin:10px auto 18px;
- padding:8px 14px;
- display:inline-block;
- border-radius:6px;
- background:rgba(255,0,0,.15);
- border:1px solid red;
- color:#ff3b3b;
- font-weight:800;
- font-size:13px;
- box-shadow:0 0 10px red;
- animation:blink 1.2s infinite alternate
-}
-@keyframes blink{
- from{opacity:.6}
- to{opacity:1}
-}
-
-/* CTA */
-.cta{
- display:inline-block;margin-top:16px;padding:20px 56px;
- border-radius:45px;background:#007bff;color:#fff;
- font-weight:900;font-size:19px;text-decoration:none;
- box-shadow:0 0 20px #00eaff,0 0 40px #00eaff;
- animation:pulse 1.4s infinite alternate
-}
-@keyframes pulse{from{transform:scale(1)}to{transform:scale(1.1)}}
-
-/* FOOTER */
-.footer-box{
- margin-top:20px;
- padding:6px 12px;
- border-radius:6px;
- border:1px solid #00eaff;
- box-shadow:0 0 8px #00eaff;
- font-size:10px;
- opacity:.85;
- display:inline-block
-}
-.footer-box a{
- color:#00eaff;
- text-decoration:none;
- font-weight:600
-}
-</style>
 </head>
-
 <body>
 
-<div class="video-bg">
- <video id="bgVideo" autoplay muted playsinline></video>
-</div>
-<div class="overlay"></div>
+<div class="hero">
 
-<div class="card">
+  <div class="profile-picture">
+    <img src="https://github.com/mrxsetup/malik_haryana/blob/main/mlik.jpg?raw=true">
+  </div>
 
- <div class="name-box">
-  <div class="name">MALIK HARYANA</div>
- </div>
+  <h1 class="heading1">👑 MALIK HARYANA 👑</h1>
 
- <img class="avatar"
- src="https://github.com/mrxsetup/malik_haryana/blob/main/mlik.jpg?raw=true">
+  <div class="subscriber-counter" id="subscriber-count">0+ Members</div>
 
- <div class="timer-circle">
-  <div id="timer" class="timer">01:00</div>
- </div>
+  <div class="trust">✔️ 100% Free | ✔️ Trusted | ✔️ No Scam</div>
+  <div class="urgent">⏳ Join Before Match Starts</div>
 
- <div class="warning">⚠️ FREE JOINING ENDING SOON</div>
+  <div class="button">
+    <a onclick="fbq('track','Lead')" href="https://t.me/+AMGwu2nW2C5kMmJl" class="btn">
+      Join India’s Most Trusted Cricket Channel <i class="fa-brands fa-telegram"></i>
+    </a>
+  </div>
 
- <p><b>🔥 Daily Cricket & Trading Tips</b><br><b>🏆 Trusted High Accuracy</b></p>
+  <div class="points">
+    <ul>
+      <li>🏆 IPL – High Accuracy</li>
+      <li>🏆 BBL – Consistent Pass</li>
+      <li>🏆 PSL – Expert Analysis</li>
+    </ul>
+  </div>
 
- <a class="cta"
- href="https://t.me/+AMGwu2nW2C5kMmJl"
- onclick="fbq('track','Lead');">
- JOIN TELEGRAM
- </a>
+  <div class="button">
+    <a onclick="fbq('track','Lead')" href="https://t.me/+AMGwu2nW2C5kMmJl" class="btn">
+      SUBSCRIBE FOR FREE <i class="fa-brands fa-telegram"></i>
+    </a>
+  </div>
 
- <div class="footer-box">
-  <a href="https://t.me/MRXSETUP" target="_blank">
-   ADS SETUP BY - @MRXSETUP
-  </a>
- </div>
+  <div class="ads-credit">
+    <a href="https://t.me/CAPTAIN4433" target="_blank">
+      ADS SETUP BY – @CAPTAIN4433
+    </a>
+  </div>
 
 </div>
 
 <script>
-/* BACKGROUND VIDEOS */
-const videos=[
- "https://res.cloudinary.com/dzhykus7z/video/upload/v1768206316/50v_iedioy.mp4",
- "https://res.cloudinary.com/dzhykus7z/video/upload/v1768206325/51v_mtwllp.mp4"
-];
-let v=0;
-const video=document.getElementById("bgVideo");
-function playVideo(){
- video.src=videos[v];
- video.play().catch(()=>{});
+const target=30000,duration=2200,el=document.getElementById("subscriber-count");
+let start=null;
+function animate(t){
+ if(!start) start=t;
+ let p=t-start;
+ let c=Math.min(Math.floor((p/duration)*target),target);
+ el.innerText=c.toLocaleString()+"+ Members";
+ if(c<target) requestAnimationFrame(animate);
 }
-video.onended=()=>{
- v=(v+1)%videos.length;
- playVideo();
-};
-playVideo();
-
-/* TIMER */
-let sec=60;
-const timer=document.getElementById("timer");
-const countdown=setInterval(()=>{
- let m=Math.floor(sec/60);
- let s=sec%60;
- timer.innerText=`${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
- if(sec<=0){
-  clearInterval(countdown);
-  window.location.href="https://t.me/+AMGwu2nW2C5kMmJl";
- }
- sec--;
-},1000);
+requestAnimationFrame(animate);
 </script>
 
 </body>
